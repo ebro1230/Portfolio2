@@ -1,42 +1,249 @@
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+.background{
+  padding: 0px 0px 0px 0px;
+  
+}
+.tech-skills-container {
+  display:flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 100px 0px 200px 0px;
+  background-image: url(@/public/Background5.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.techskill{
+  margin-left: 2%;
+  margin-right: 2%;
+  margin-bottom: 15px;
+}
+.techcards{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.techtitle{
+  justify-content: center;
+  color:white;
+  text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+  padding:50px 0 100px 0;
+}
+.techtitle h3{
+  width:fit-content;
+  text-decoration: underline;
+  font-weight: bold;
+  font-family: 'Roboto', sans-serif;
+}
+.card-title{
+  display: flex;
+  justify-content: center;
+  font-family: 'Roboto', sans-serif;
+}
+.card-img-top{
+  height: 80px;
+  margin-top: 15px;
+  margin-right: 15px;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  margin-left: 15px;
+  width: auto !important;
+}
+.card{
+  min-width: 300px !important;
+  width: 30%;
+  max-width: 22rem;
+  border-radius: 4px;
+  background: white;
+  box-shadow: 0 6px 10px rgba(0,0,0,.08), 0 0 6px rgba(0,0,0,.05);
+  transition: .3s transform cubic-bezier(.155,1.105,.295,1.12),.3s box-shadow,.3s -webkit-transform cubic-bezier(.155,1.105,.295,1.12);
+  margin-top: 10px;
+}
+.card:hover{
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
+  
+}
+.card-text{
+  text-align:center;
+  font-family: 'Roboto', sans-serif;
+}
+.card-body{
+  min-height: 200px;
+}
+.about-me-container {
+  display:flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 200px 40px 200px 40px;
+  background-image: url(@/public/Background1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  color:white;
+  text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+}
+.contact-me-div{
+  background-image: url(@/public/Background7.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  color:white;
+  text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+  padding: 100px 40px 200px 40px;
+}
+.profilepic-and-badges{
+  align-self: center;
+  justify-content: center;
+  display: flex;
+}
+.social-media-icons{
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+}
+.linkedIn a {
+  color:rgb(0, 119, 181);
+  display: flex;
+  justify-content: center;
+  width: fit-content;
+  cursor: pointer;
+}
+.linkedIn{
+  display: flex;
+  justify-content: center;
+}
+.github a {
+  color:rgb(255, 255, 255);
+  display: flex;
+  justify-content: center;
+  width: fit-content;
+  cursor: pointer;
+}
+.github{
+  display: flex;
+  justify-content: center;
+}
+.email a {
+  color:rgb(177, 181, 181);
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  width: fit-content;
+}
+.email{
+  display: flex;
+  justify-content: center;
+}
+.intro-text{
+  margin: 0px 20px 0px 20px;
+  align-self: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Roboto', sans-serif;
+}
+.intro-text h5{
+  margin-bottom:24px;
+  font-family: 'Roboto', sans-serif;
+}
+@media (max-width:992px) and (min-width:0) {
+  .intro-text h5{
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
   }
 }
-
-html,
-body {
-  max-width: 100vw;
-  overflow-x: hidden;
+.projecttitle{
+  justify-content: center;
+  padding:50px 0 100px 0;
 }
-
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.projecttitle h3{
+  width:fit-content;
+  text-decoration: underline;
+  font-weight: bold;
+  font-family: 'Roboto', sans-serif;
+  color:white;
+  text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
 }
-
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
+.contacttitle{
+  justify-content: center;
+  padding:50px 0 100px 0;
 }
-
-a {
-  color: inherit;
-  text-decoration: none;
+.contacttitle h3{
+  width:fit-content;
+  text-decoration: underline;
+  font-weight: bold;
+  font-family: 'Roboto', sans-serif;
 }
-
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
+.nav-options{
+  display:flex;
+  justify-content: space-evenly;
+}
+.nav-link{
+  color:white;
+}
+.navbar-toggler{
+  margin-right:20px;
+}
+.navbar-collapse{
+  justify-content: flex-end;
+  margin-right: 20px;
+  font-family: 'Roboto', sans-serif;
+  padding-left:20px;
+}
+.navbar-brand{
+  margin-left: 20px;
+  font-family: 'Roboto', sans-serif;
+}
+.my-projects-div{
+  background-image: url(@/public/Background4.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 100px 0px 200px 0px;
+}
+.contact-me-text{
+  margin: 0px 50px 0px 50px;
+  font-family: 'Roboto', sans-serif;
+}
+.project-container{
+  display:flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  
+}
+.accordion{
+  min-width: 40%;
+  max-width: 22rem;
+  margin-top: 10px;
+  height:100%;
+  font-family: 'Roboto', sans-serif;
+  background-color: white;
+  --bs-accordion-bg:white;
+}
+.code-buttons{
+  display:flex;
+  justify-content: space-evenly;
+}
+figure{
+  margin: 0 0 0rem;
+}
+.figure-img{
+  margin-bottom: 0px;
+}
+.project-title{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+.project-header{
+  width:100%;
+  font-family: 'Roboto', sans-serif;
+}
+.figure-caption{
+  padding-top:20px;
+  padding-bottom:40px;
 }
